@@ -1,0 +1,20 @@
+.dynamic {
+  position: relative;
+  display: inline-block;
+}
+.active {
+  font-size: 78px;
+  margin-bottom: 20px;
+  height: 54px;
+  line-height: 44px;
+}
+.active::after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 4px;
+  height: 100%;
+  background-color: black;
+}
