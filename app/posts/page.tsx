@@ -3,14 +3,16 @@ import getPostMetadata from "@/components/Post/getPostMetadata";
 import PostPreview from "@/components/Post/PostPreview";
 
 const HomePage = () => {
-    const postMetadata = getPostMetadata();
-    const postPreviews = postMetadata.map((post) => (
-      <PostPreview key={post.slug} {...post} />
-    ));
-  
-    return (
-      <div>{postPreviews}</div>
-    );
-  };
-  
-  export default HomePage;
+  const postMetadata = getPostMetadata();
+  const postPreviews = postMetadata.map((post) => (
+    <PostPreview key={post.slug} {...post} />
+  ));
+
+  return (
+    <div className={styles.container}>
+      <div className={styles.items}>{postPreviews}</div>
+    </div>
+  );
+};
+
+export default HomePage;
