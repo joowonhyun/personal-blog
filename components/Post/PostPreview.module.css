@@ -1,0 +1,13 @@
+.date {
+  color: rgb(156, 154, 154);
+  margin-bottom: 12px;
+}
+.title {
+  margin-bottom: 12px;
+}
+.title:hover {
+  text-decoration: underline;
+}
+.subTitle {
+  font-weight: 600;
+}
