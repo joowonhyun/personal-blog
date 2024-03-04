@@ -1,0 +1,78 @@
+.pc_only {
+  display: block;
+}
+.container h3 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.container {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.title {
+  font-size: 3rem;
+  padding: 2rem 0;
+  font-weight: 700;
+}
+.intro {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+.detailed {
+  font-size: .8rem;
+  line-height: 1.4rem;
+  margin-bottom: 2rem;
+}
+.highlight {
+  background-color: #8ffebf80;
+  margin-bottom: 1.2rem;
+  display: inline-block;
+}
+.divide {
+  margin-bottom: 1.2rem;
+  border-top: 1px solid rgb(156, 154, 154);
+}
+.divide > li {
+  padding: .8rem;
+  border-bottom: 1px solid rgb(156, 154, 154);
+  color: rgb(156, 154, 154);
+  font-weight: 400;
+}
+.divide .active {
+  font-weight: 600;
+  color: #000000;
+}
+.items {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.divide .corp {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.skill {
+  font-weight: 500;
+}
+.date {
+  display: inline-block;
+}
+@media (max-width: 800px) {
+  .pc_only {
+    display: none;
+  }
+  .title {
+    font-size: 2rem;
+    padding: 1.5rem 0;
+  }
+  .items {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .date {
+    display: block;
+    margin-top: .1rem;
+  }
+}
