@@ -1,11 +1,9 @@
 .container{
-    height: 75px;
+    height: 4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1060px;
-    margin: 0 auto;
-    padding: 0 0.5rem;
+    padding: 0 1rem;
   }
   
   .logo{
@@ -34,3 +32,9 @@
     padding-bottom: 4px;
     cursor: pointer;
   }
+@media (max-width: 800px) {
+  .list li a{
+    height: 2rem;
+    line-height: 2rem;
+  }
+}

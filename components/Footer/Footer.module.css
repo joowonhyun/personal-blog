@@ -1,8 +1,12 @@
-.container{
-  height: 60px;
+.container {
+  height: 3rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  max-width: 1060px;
-  margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding: 0 1rem;
+  }
 }
