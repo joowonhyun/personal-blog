@@ -5,7 +5,7 @@ const About = () => {
     <div className={styles.container}>
       <p className={styles.title}>About Me</p>
       <p className={styles.intro}>
-        비즈니스에 공감하고 주도적으로 개발하기 위해 노력하는
+        비즈니스에 공감하고 주도적으로 개발하기 위해<br className={styles.mo_only} /> 노력하는
         <br className={styles.pc_only} /> 프론트엔드 개발자 현주원입니다.
       </p>
       <p className={styles.detailed}>
@@ -15,7 +15,7 @@ const About = () => {
         <br />
         사용자에게 편리하고 즐거운 경험을 제공할 수 있는 완성도 높은 개발을 위해
         <br className={styles.pc_only} /> 기술 스택을 늘리고, 레벨을 높이기 위해 공부하며, 이 과정에서 알게 된
-        정보를 공유하기 위해 노력합니다.
+        정보를 공유하기 위해 노력하고 있습니다.
         <br />
       </p>
       <main>

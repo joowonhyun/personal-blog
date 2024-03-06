@@ -1,6 +1,9 @@
 .pc_only {
   display: block;
 }
+.mo_only{
+  display: none;
+}
 .container h3 {
   font-size: 1rem;
   font-weight: 400;
@@ -62,6 +65,9 @@
 @media (max-width: 800px) {
   .pc_only {
     display: none;
+  }
+  .mo_only{
+    display: block;
   }
   .title {
     font-size: 2rem;
