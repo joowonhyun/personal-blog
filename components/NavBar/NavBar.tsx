@@ -14,7 +14,7 @@ const Nav = ({path}: Path) => {
       {
         navList.map((el) => (
         <li className={el === path.replace(/\//g, "") ? styles.active : ''} key={el}>
-          <Link href={`${el}`}>{el.toUpperCase()}</Link>
+          <Link href={`/${el}`}>{el.toUpperCase()}</Link>
         </li>
         ))
       }
