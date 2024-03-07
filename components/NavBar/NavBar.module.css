@@ -14,6 +14,9 @@
 .list li:hover {
   border-bottom: 1px solid rgb(156, 154, 154);
 }
+.list li:last-of-type:hover {
+  border-bottom: none;
+}
 
 .list li a {
   display: block;
