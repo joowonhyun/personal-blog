@@ -13,7 +13,7 @@ const Nav = ({path}: Path) => {
     <ol className={styles.list}>
       {
         navList.map((el) => (
-        <li className={el === path.replace(/\//g, "") ? styles.active : ''} key={el}>
+        <li className={el === path.split('/')[1] ? styles.active : ''} key={el}>
           <Link href={`/${el}`}>{el.toUpperCase()}</Link>
         </li>
         ))
