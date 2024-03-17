@@ -11,7 +11,7 @@ const Header = () => {
       <div>
         <Link aria-current="page" href="/">
           <h1 className={styles.logo}>
-            Joowon Log
+            Joowon dev
             <span>,</span>
           </h1>
         </Link>
