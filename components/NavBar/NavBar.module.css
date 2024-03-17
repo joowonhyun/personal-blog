@@ -6,15 +6,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
 }
 
-.list li {
-  margin: 0 1rem;
-}
 .list li:hover {
   border-bottom: 1px solid rgb(156, 154, 154);
 }
-.list li:last-of-type:hover {
+.list li:last-of-type:hover,
+.list li:nth-of-type(3):hover {
   border-bottom: none;
 }
 
@@ -22,12 +21,25 @@
   display: block;
   width: 100%;
   height: 100%;
+  max-height: 31px;
   padding-bottom: 4px;
   cursor: pointer;
 }
+.list li button {
+  cursor: pointer;
+}
+
+.list li button > svg {
+    width: 30px;
+    height: 30px;
+    fill: #ff9a00;
+}
 
 @media (max-width: 800px) {
-  .list li a {
+  .list {
+    gap: 1.2rem;
+  }
+  .list li a, .list li button  {
     height: 2rem;
     line-height: 2rem;
   }

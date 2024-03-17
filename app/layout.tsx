@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
-
+import { cookies } from "next/headers";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -16,12 +16,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const res = cookies().get("mode");
   return (
     <html lang="ko">
-      <body>
-        <Header/>
+      <body
+        className={res != undefined && res.value === "dark" ? "dark" : ""}
+      >
+        <Header />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
