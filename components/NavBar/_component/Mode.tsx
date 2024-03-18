@@ -10,7 +10,7 @@ export default function Mode() {
     let cookieVal = ("; " + document.cookie)
       .split(`; mode=`)
       .pop()
-      .split(";")[0];
+      ?.split(";")[0] ?? "";
     if (cookieVal == "") {
       document.cookie = "mode=light; max-age=" + 3600 * 24 * 400;
     }
@@ -19,10 +19,10 @@ export default function Mode() {
     <li>
       <button
         onClick={() => {
-          let cookieVal = ("; " + document.cookie)
+            let cookieVal = ("; " + document.cookie)
             .split(`; mode=`)
             .pop()
-            .split(";")[0];
+            ?.split(";")[0] ?? "";
           if (cookieVal == "light") {
             document.cookie = "mode=dark; max-age=" + 3600 * 24 * 400;
             router.refresh();
