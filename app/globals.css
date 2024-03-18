@@ -20,7 +20,7 @@ body {
   max-width: 1060px;
   margin: 0 auto;
   background: white;
-  color: black;
+  color: inherit;
 }
 
 body.dark {
@@ -37,6 +37,10 @@ ol,
 ul {
   list-style: none;
 }
+pre {
+  font-size: .8rem;
+}
+
 
 @media (max-width: 800px) {
   html {
