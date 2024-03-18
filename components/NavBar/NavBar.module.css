@@ -39,6 +39,10 @@
   .list {
     gap: 1.2rem;
   }
+  .list svg, .list li button > svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
   .list li a, .list li button  {
     height: 2rem;
     line-height: 2rem;
