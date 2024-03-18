@@ -18,8 +18,9 @@ const getPostMetadata = (): PostMetadata[] => {
       slug: fileName.replace(".md", ""),
     };
   });
+  // 날짜 순으로 정렬
+  return posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-  return posts;
 };
 
 export default getPostMetadata;
