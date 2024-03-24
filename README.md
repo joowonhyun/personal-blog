@@ -42,12 +42,6 @@ components
  ┃ ┣ PostPreview.module.css
  ┃ ┣ getPostMetadata.tsx
  ┃ ┗ previewPost.tsx
-lists
- ┣ markdown
- ┃ ┗ CodeBlock.tsx
- ┣ how-to-apply-code-block.md
- ┣ mysql-columm-duplication.md
- ┗ vscode-emmet.md
 ```
 
 ## CONTENTS
