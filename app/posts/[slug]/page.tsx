@@ -5,6 +5,7 @@ import getPostMetadata from "../../../components/Post/getPostMetadata";
 import styles from "./post.module.css";
 import CodeBlock from "@/posts/markdown/CodeBlock";
 
+export const dynamic = 'force-dynamic'
 const getPostContent = (slug: string) => {
   const folder = "posts/";
   const file = `${folder}${slug}.md`;
