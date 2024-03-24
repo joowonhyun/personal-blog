@@ -1,6 +1,7 @@
 import styles from "./posts.module.css";
 import getPostMetadata from "../../components/Post/getPostMetadata";
-import PostPreview from "../../components/Post/PostPreview";
+import PostPreview from '../../components/Post/PostPreview';
+
 const HomePage = () => {
   const postMetadata = getPostMetadata();
   const postPreviews = postMetadata.map((post) => (
