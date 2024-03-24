@@ -20,7 +20,7 @@ const About = () => {
       </p>
       <main>
         <h2 className={styles.highlight}>
-          <span>👨🏻‍💻</span> I've worked at
+          <span>👨🏻‍💻</span> I&apos;ve worked at
         </h2>
         <ul className={styles.divide}>
           <li className={styles.active}>
