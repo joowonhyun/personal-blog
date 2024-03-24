@@ -1,11 +1,12 @@
 DEMO : https://personal-blog-five-pi.vercel.app/
 
+## Tech Stack
+- Next 14 (App Router), TypeScript
+  
 ## FILE TREE
-
-상세 파일 구조는 아래와 같습니다.
 - app : 파일 페이지 구성
 - components : 페이지별 컴포넌트 구성
-- posts : 블로그 MD File
+- posts : 블로그 리스트
 ```bash
 app
  ┣ about
