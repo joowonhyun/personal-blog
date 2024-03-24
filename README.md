@@ -1,30 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+DEMO : https://personal-blog-five-pi.vercel.app/
 
-## Getting Started
+## FILE TREE
 
-First, run the development server:
-
+상세 파일 구조는 아래와 같습니다.
+- app : 파일 페이지 구성
+- components : 페이지별 컴포넌트 구성
+- posts : 블로그 mdFil
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+app
+ ┣ about
+ ┃ ┣ about.module.css
+ ┃ ┗ page.tsx
+ ┣ posts
+ ┃ ┣ [slug]
+ ┃ ┃ ┣ page.tsx
+ ┃ ┃ ┗ post.module.css
+ ┃ ┣ page.tsx
+ ┃ ┗ posts.module.css
+ ┣ favicon.ico
+ ┣ globals.css
+ ┣ layout.tsx
+ ┣ main.module.css
+ ┗ page.tsx
+
+components
+ ┣ Banner
+ ┃ ┣ Banner.module.css
+ ┃ ┗ Banner.tsx
+ ┣ Footer
+ ┃ ┣ Footer.module.css
+ ┃ ┗ Footer.tsx
+ ┣ Header
+ ┃ ┣ Header.module.css
+ ┃ ┗ Header.tsx
+ ┣ NavBar
+ ┃ ┣ _component
+ ┃ ┃ ┗ Mode.tsx
+ ┃ ┣ NavBar.module.css
+ ┃ ┗ NavBar.tsx
+ ┗ Post
+ ┃ ┣ PostPreview.module.css
+ ┃ ┣ getPostMetadata.tsx
+ ┃ ┗ previewPost.tsx
+posts
+ ┣ markdown
+ ┃ ┗ CodeBlock.tsx
+ ┣ how-to-apply-code-block.md
+ ┣ mysql-columm-duplication.md
+ ┗ vscode-emmet.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-JooWon's Personal Blog
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## CONTENTS
+1. 자기소개 및 블로그 포스팅
+2. 다크모드 및 반응형 구성
