@@ -1,7 +1,6 @@
 import fs from "fs";
 import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
-import getPostMetadata from "../../../components/Post/getPostMetadata";
 import styles from "./post.module.css";
 import CodeBlock from "../../../lists/markdown/CodeBlock";
 

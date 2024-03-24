@@ -1,3 +1,6 @@
+"use client"
+
+import {useRouter} from 'next/navigation'
 import styles from "./NavBar.module.css";
 import Link from "next/link";
 import Mode from "./_component/Mode";
@@ -9,6 +12,7 @@ interface Path {
 const navList = ["about", "posts"];
 
 const Nav = ({ path }: Path) => {
+  let router = useRouter();
   return (
     <nav>
       <ul className={styles.list}>
@@ -17,7 +21,8 @@ const Nav = ({ path }: Path) => {
             className={el === path.split("/")[1] ? styles.active : ""}
             key={el}
           >
-            <Link href={`/${el}`}>{el.toUpperCase()}</Link>
+            <div
+            onClick={()=>{ router.push(`/${el}`) }}>{el.toUpperCase()}</div>
           </li>
         ))}
         <li>
