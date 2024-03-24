@@ -3,10 +3,10 @@ import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
 import getPostMetadata from "../../../components/Post/getPostMetadata";
 import styles from "./post.module.css";
-import CodeBlock from "@/posts/markdown/CodeBlock";
+import CodeBlock from "../../../lists/markdown/CodeBlock";
 
 const getPostContent = (slug: string) => {
-  const folder = "posts/";
+  const folder = "lists/";
   const file = `${folder}${slug}.md`;
   const content = fs.readFileSync(file, "utf8");
   const matterResult = matter(content);
