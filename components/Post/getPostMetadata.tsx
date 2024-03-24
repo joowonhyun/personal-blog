@@ -9,7 +9,7 @@ interface PostMetadata {
 }
 
 const getPostMetadata = (): PostMetadata[] => {
-  const folder = "lists/";
+  const folder = `${process.env.NEXT_PUBLIC_FILE_NAME}/`;
   const files = fs.readdirSync(folder);
   const markdownPosts = files.filter((file) => file.endsWith(".md"));
 
