@@ -1,6 +1,12 @@
 import Link from "next/link";
-import { PostMetadata } from "./PostMetadata";
 import styles from './PostPreview.module.css'
+
+interface PostMetadata {
+  title: string;
+  date: string;
+  subtitle: string;
+  slug: string;
+}
 const PostPreview = (props: PostMetadata) => {
   return (
     <div>
