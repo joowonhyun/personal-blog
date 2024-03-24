@@ -1,4 +1,4 @@
-DEMO : https://personal-blog-coral-one.vercel.app
+DEMO : https://personal-blog-eight-virid.vercel.app/
 ## Tech Stack
 - Next 14 (App Router), TypeScript
   
