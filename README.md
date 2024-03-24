@@ -1,5 +1,4 @@
-DEMO : https://personal-blog-five-pi.vercel.app/
-
+DEMO : https://personal-blog-coral-one.vercel.app
 ## Tech Stack
 - Next 14 (App Router), TypeScript
   
@@ -43,7 +42,7 @@ components
  ┃ ┣ PostPreview.module.css
  ┃ ┣ getPostMetadata.tsx
  ┃ ┗ previewPost.tsx
-posts
+lists
  ┣ markdown
  ┃ ┗ CodeBlock.tsx
  ┣ how-to-apply-code-block.md
