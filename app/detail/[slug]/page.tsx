@@ -4,7 +4,7 @@ import matter from "gray-matter";
 import styles from "./post.module.css";
 import CodeBlock from "../../../lists/markdown/CodeBlock";
 
-const getPostContent = (slug: string) => {
+const getPostContent = async (slug: string) => {
   const folder = `${process.env.NEXT_PUBLIC_FILE_NAME}/`;
   const file = `${folder}${slug}.md`;
   const content = fs.readFileSync(file, "utf8");
@@ -12,9 +12,9 @@ const getPostContent = (slug: string) => {
   return matterResult;
 };
 
-const PostPage = (props: any) => {
+const PostPage = async (props: any) => {
   const slug = props.params.slug;
-  const post = getPostContent(slug);
+  const post = await getPostContent(slug);
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>{post.data.title}</h1>
