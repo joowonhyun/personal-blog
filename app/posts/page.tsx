@@ -2,8 +2,8 @@ import styles from "./posts.module.css";
 import getPostMetadata from "../../components/Post/getPostMetadata";
 import PostPreview from '../../components/Post/previewPost';
 
-const HomePage = () => {
-  const postMetadata = getPostMetadata();
+const HomePage = async () => {
+const postMetadata = await getPostMetadata();
   const postPreviews = postMetadata.map((post) => (
     <PostPreview key={post.slug} {...post} />
   ));

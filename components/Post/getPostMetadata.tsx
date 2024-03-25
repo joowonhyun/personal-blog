@@ -8,7 +8,7 @@ interface PostMetadata {
   slug: string;
 }
 
-const getPostMetadata = (): PostMetadata[] => {
+const getPostMetadata = async () => {
   const folder = 'lists';
   const files = fs.readdirSync(folder);
   const markdownPosts = files.filter((file) => file.endsWith(".md"));
