@@ -11,7 +11,7 @@ const PostPreview = (props: PostMetadata) => {
   return (
     <div>
       <p className={styles.date}>{props.date}</p>
-      <Link href={`/detail/${props.slug}`}>
+      <Link href={`/posts/${props.slug}`}>
         <h2 className={styles.title}>{props.title}</h2>
       </Link>
       <p className={styles.subTitle}>{props.subtitle}</p>

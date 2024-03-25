@@ -2,8 +2,10 @@ import styles from "./posts.module.css";
 import getPostMetadata from "../../components/Post/getPostMetadata";
 import PostPreview from '../../components/Post/previewPost';
 
+export const dynamic = 'force-dynamic'
+
 const HomePage = () => {
-const postMetadata = getPostMetadata();
+  const postMetadata = getPostMetadata();
   const postPreviews = postMetadata.map((post) => (
     <PostPreview key={post.slug} {...post} />
   ));

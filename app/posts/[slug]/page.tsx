@@ -1,21 +1,30 @@
 import fs from "fs";
 import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
+import getPostMetadata from "../../../components/Post/getPostMetadata";
 import styles from "./post.module.css";
-import CodeBlock from "../../../lists/markdown/CodeBlock";
+import CodeBlock from "@/posts/markdown/CodeBlock";
 
 
-const getPostContent = async (slug: string) => {
-  const folder = 'lists';
+export const dynamic = 'force-dynamic'
+const getPostContent = (slug: string) => {
+  const folder = "posts";
   const file = `${folder}/${slug}.md`;
-  const content = fs.readFileSync(file,"utf-8");
+  const content = fs.readFileSync(file, "utf8");
   const matterResult = matter(content);
   return matterResult;
 };
 
-const PostPage = async (props: any) => {
+export const generateStaticParams = async () => {
+  const posts = getPostMetadata();
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
+};
+
+const PostPage = (props: any) => {
   const slug = props.params.slug;
-  const post = await getPostContent(slug);
+  const post = getPostContent(slug);
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>{post.data.title}</h1>
