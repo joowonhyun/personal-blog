@@ -10,7 +10,7 @@ const postMetadata = await getPostMetadata();
 
   return (
     <div className={styles.container}>
-      <div className={styles.items}>{postPreviews}</div>
+      <div className={styles.items}>test</div>
     </div>
   );
 };
