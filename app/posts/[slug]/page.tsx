@@ -5,7 +5,7 @@ import styles from "./post.module.css";
 import CodeBlock from "@/posts/markdown/CodeBlock";
 
 const getPostContent = async (slug: string) => {
-  const file = `posts/${slug}.md`;
+  const file = `/posts/${slug}.md`;
   const content = await fs.readFile(process.cwd() + file, "utf8");
   const matterResult = matter(content);
   return matterResult;
