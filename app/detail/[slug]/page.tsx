@@ -4,6 +4,7 @@ import matter from "gray-matter";
 import styles from "./post.module.css";
 import CodeBlock from "../../../lists/markdown/CodeBlock";
 
+
 const getPostContent = async (slug: string) => {
   const folder = 'lists';
   const file = `${folder}/${slug}.md`;
