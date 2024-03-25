@@ -5,8 +5,8 @@ import styles from "./post.module.css";
 import CodeBlock from "../../../lists/markdown/CodeBlock";
 
 const getPostContent = async (slug: string) => {
-  const folder = `${process.env.NEXT_PUBLIC_FILE_NAME}/`;
-  const file = `${folder}${slug}.md`;
+  const folder = 'lists';
+  const file = `${folder}/${slug}.md`;
   const content = fs.readFileSync(file, "utf8");
   const matterResult = matter(content);
   return matterResult;

@@ -9,13 +9,13 @@ interface PostMetadata {
 }
 
 const getPostMetadata = (): PostMetadata[] => {
-  const folder = `${process.env.NEXT_PUBLIC_FILE_NAME}/`;
+  const folder = 'lists';
   const files = fs.readdirSync(folder);
   const markdownPosts = files.filter((file) => file.endsWith(".md"));
 
   // Get gray-matter data from each file.
   const posts = markdownPosts.map((fileName) => {
-    const fileContents = fs.readFileSync(`${process.env.NEXT_PUBLIC_FILE_NAME}/${fileName}`, "utf8");
+    const fileContents = fs.readFileSync(`lists/${fileName}`, "utf8");
     const matterResult = matter(fileContents);
     return {
       title: matterResult.data.title,
