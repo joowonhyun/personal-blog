@@ -21,8 +21,7 @@ const Nav = ({ path }: Path) => {
             className={el === path.split("/")[1] ? styles.active : ""}
             key={el}
           >
-            <div
-            onClick={()=>{ router.push(`/${el}`) }}>{el.toUpperCase()}</div>
+          <Link href={`/${el}`}>{el.toUpperCase()}</Link>
           </li>
         ))}
         <li>
