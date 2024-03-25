@@ -7,7 +7,7 @@ import CodeBlock from "../../../lists/markdown/CodeBlock";
 const getPostContent = async (slug: string) => {
   const folder = 'lists';
   const file = `${folder}/${slug}.md`;
-  const content = fs.readFileSync(file, "utf8");
+  const content = fs.readFileSync(file,"utf-8");
   const matterResult = matter(content);
   return matterResult;
 };
